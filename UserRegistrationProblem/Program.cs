@@ -18,6 +18,11 @@ namespace UserRegistrationProblem
             string lastName = Console.ReadLine();
             bool lNresult = validation.ValidateLastName(lastName);
             validation.Result(lNresult);
+
+            Console.Write("Enter MobileNum: ");
+            string mobileNum = Console.ReadLine();
+            bool mNresult = validation.ValidateMobileNum(mobileNum);
+            validation.Result(mNresult);
         }
     }
 }

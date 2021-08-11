@@ -9,6 +9,7 @@ namespace UserRegistrationProblem
     {
         public static string Regex_FirstName = "^[A-Z]{1}[a-z]{2,}$";
         public static string Regex_LastName = "^[A-Z]{1}[a-z]{2,}$";
+        public static string Regex_MobileNum = "^[1-9]{1}[0-9]{1}[ ][1-9]{1}[0-9]{9}$";
         public bool ValidateFirstName(string first)
         {
             return Regex.IsMatch(first, Regex_FirstName);
@@ -17,6 +18,11 @@ namespace UserRegistrationProblem
         public bool ValidateLastName(string last)
         {
             return Regex.IsMatch(last, Regex_LastName);
+        }
+
+        public bool ValidateMobileNum(string mobileNum)
+        {
+            return Regex.IsMatch(mobileNum, Regex_MobileNum);
         }
 
         public void Result(bool result)
