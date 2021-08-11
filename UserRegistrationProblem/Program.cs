@@ -23,6 +23,11 @@ namespace UserRegistrationProblem
             string mobileNum = Console.ReadLine();
             bool mNresult = validation.ValidateMobileNum(mobileNum);
             validation.Result(mNresult);
+
+            Console.Write("Create Password: ");
+            string password = Console.ReadLine();
+            bool presult = validation.ValidatePassword(password);
+            validation.Result(presult);
         }
     }
 }
