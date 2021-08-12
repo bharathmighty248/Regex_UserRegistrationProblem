@@ -10,7 +10,7 @@ namespace UserRegistrationProblem
         public static string Regex_FirstName = "^[A-Z]{1}[a-z]{2,}$";
         public static string Regex_LastName = "^[A-Z]{1}[a-z]{2,}$";
         public static string Regex_MobileNum = "^[1-9]{1}[0-9]{1}[ ][1-9]{1}[0-9]{9}$";
-        public static string Regex_Password = "^(?=.*?[A-Z])[A-Za-z0-9!@#$%^&*]{8,}$";
+        public static string Regex_Password = "^(?=.*?[A-Z])(?=.*?[0-9])[A-Za-z0-9!@#$%^&*]{8,}$";
         
         public bool ValidateFirstName(string first)
         {
