@@ -19,6 +19,11 @@ namespace UserRegistrationProblem
             bool lNresult = validation.ValidateLastName(lastName);
             validation.Result(lNresult);
 
+            Console.Write("Enter Email-Id: ");
+            string email = Console.ReadLine();
+            bool emresult = validation.ValidateEmail(email);
+            validation.Result(emresult);
+
             Console.Write("Enter MobileNum: ");
             string mobileNum = Console.ReadLine();
             bool mNresult = validation.ValidateMobileNum(mobileNum);
